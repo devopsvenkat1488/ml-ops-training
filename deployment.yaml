@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: ml-model-container
-        image: apple1002/ml-model-api:1.0
+        image: apple1002/ml-model-api:1.1
         ports:
         - containerPort: 5000

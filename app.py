@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load('model.joblib')
 
-@app.route('/predict', methods=['POST','GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
     data = request.json  # Get JSON input
     df = pd.DataFrame([data])  # Convert input data to DataFrame
